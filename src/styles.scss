@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700');
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import './assets/styles/base/variables';
+@import './assets/styles/modules/load';
+@import './assets/styles/modules/body';
+@import './assets/styles/modules/card';
+@import './assets/styles/modules/button';
+@import './assets/styles/modules/footer';
+@import './assets/styles/modules/modal';

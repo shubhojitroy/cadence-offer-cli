@@ -1,0 +1,20 @@
+.btn-primary {
+    background-color:#ffffff;
+    border-radius: .2233rem;
+    padding: .8em 1.9em;
+    text-align: center;
+    color: #2f2e2e;
+    border: 1.6px solid #616161;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+
+    &:hover {
+        background-color:#21295d;  
+        color:#ffffff;
+        border: 1px solid #ffffff; 
+    }
+}
+.btn-link {
+    color: #21295d;
+}

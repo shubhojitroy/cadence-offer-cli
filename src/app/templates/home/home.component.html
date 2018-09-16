@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">Please select your country of origin</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Due to legal restrictions, access to these webpages is only intended for access by persons within Australia and New Zealand. These webpages do not constitute an offer of securities in any place in which, or to any person to whom, it would not be lawful to make such an offer.
+          </p>
+          <form novalidate>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select Country</label>
+              <select class="form-control" id="exampleFormControlSelect1" placeholder="Choose your country of residence" value="">
+                <option>Australia</option>
+                <option>New Zealand</option>
+                <option>Singapore</option>
+                <option>China</option>
+                <option>Malaysia</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="onSubmit()" [routerLink]="['/prospectus']">Offer Details</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
