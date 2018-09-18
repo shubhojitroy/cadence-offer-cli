@@ -3,24 +3,28 @@
     <div class="col-sm">
       <div class="card">
         <div class="card-header">
-          <h5 class="card-title">Please select your country of origin</h5>
+          <h5 class="card-title">{{ pageTitle }}</h5>
         </div>
         <div class="card-body">
           <p class="card-text">
             Due to legal restrictions, access to these webpages is only intended for access by persons within Australia and New Zealand. These webpages do not constitute an offer of securities in any place in which, or to any person to whom, it would not be lawful to make such an offer.
           </p>
-          <form novalidate>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Select Country</label>
-              <select class="form-control" id="exampleFormControlSelect1" placeholder="Choose your country of residence" value="">
-                <option>Australia</option>
-                <option>New Zealand</option>
-                <option>Singapore</option>
-                <option>China</option>
-                <option>Malaysia</option>
+          <form [formGroup]="countryform" novalidate (ngSubmit)="onSubmit()">
+            <div class="form-group" [ngClass]="{
+              'has-success': country.valid && (country.dirty || country.touched),
+              'has-danger': country.invalid && (country.dirty || country.touched)}">
+              <label for="country">Select Country</label>
+              <select class="form-control" id="" aria-describedby="textHelp" placeholder="Choose your country of residence" formControlName="country">
+                <option value="">Choose your country of residence</option>
+                <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
               </select>
+              <div class="form-control-feedback" *ngIf="country.errors && (country.dirty || country.touched)">
+                <p *ngIf="country.errors.required">Country is required</p>
+              </div>
             </div>
-            <button type="submit" class="btn btn-primary" (click)="onSubmit()" [routerLink]="['/prospectus']">Offer Details</button>
+            <button type="submit" class="btn btn-primary"><!--(click)="onSubmit()" [routerLink]="['/prospectus']"-->
+              Submit <i class="fas fa-share-square"></i>
+            </button>
           </form>
         </div>
       </div>

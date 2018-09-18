@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'co-eligibility-notice',
   templateUrl: './eligibility-notice.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EligibilityNoticeComponent implements OnInit {
 
-  constructor() { }
+  pageTitle = 'Legal Restriction';
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  onBack(): void {
+    this.router.navigate(['/home']);
   }
 
 }
