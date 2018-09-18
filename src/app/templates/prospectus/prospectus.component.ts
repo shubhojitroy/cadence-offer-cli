@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProspectusComponent implements OnInit {
 
+  cardLabel = 'Cadence Capital Investment Philosophy';
   constructor() { }
 
   ngOnInit() {
