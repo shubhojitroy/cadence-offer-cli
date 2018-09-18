@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   pageTitle = 'Cadence Offer IPO';
+  cardLabel = 'Country of Primary Residence';
 
   countryform: FormGroup;
   country: FormControl;

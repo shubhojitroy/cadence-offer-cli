@@ -7,13 +7,16 @@
         </div>
         <div class="card-body">
           <p class="card-text">
-            Due to legal restrictions, access to these webpages is only intended for access by persons within Australia and New Zealand. These webpages do not constitute an offer of securities in any place in which, or to any person to whom, it would not be lawful to make such an offer.
+            Cadence Capital Limited is a Listed Investment Company (LIC) that invests in listed equities, with the aim of producing above market risk-adjusted returns over time. CDM listed on the ASX in December 2006 and currently has over $400m of Funds Under Management. 50% of our shareholders are Self Managed Super Funds (SMSF).<br><br>You can invest in CDM by buying shares on the ASX (ASX:CDM)
           </p>
           <form [formGroup]="countryform" novalidate (ngSubmit)="onSubmit()">
             <div class="form-group" [ngClass]="{
               'has-success': country.valid && (country.dirty || country.touched),
               'has-danger': country.invalid && (country.dirty || country.touched)}">
-              <label for="country">Select Country</label>
+              <!-- <label for="country">Select Country</label> -->
+              <label for="country">
+                <h5 class="card-title">{{ cardLabel }}</h5>
+              </label>
               <select class="form-control" id="" aria-describedby="textHelp" placeholder="Choose your country of residence" formControlName="country">
                 <option value="">Choose your country of residence</option>
                 <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
