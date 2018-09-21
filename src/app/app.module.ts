@@ -22,6 +22,10 @@ import { PrivacypolicyComponent } from './dialogs/privacypolicy/privacypolicy.co
 
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 
+// import { ContactComponent } from './modal/contact/contact.component';
+// import { PrivacypolicyComponent } from './modal/privacypolicy/privacypolicy.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
