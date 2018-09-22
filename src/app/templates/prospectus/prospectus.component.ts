@@ -12,5 +12,7 @@ export class ProspectusComponent implements OnInit {
 
   ngOnInit() {
   }
+  onSubmit() {
 
+  }
 }
