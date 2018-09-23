@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ScheduleComponent } from '../../tabs/schedule/schedule.component';
+import { DatesComponent } from '../../tabs/dates/dates.component';
+import { DetailsComponent } from '../../tabs/details/details.component';
 
 @Component({
   selector: 'co-prospectus',

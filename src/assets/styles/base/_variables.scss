@@ -3,11 +3,18 @@ $fa-font-path: '../webfonts';
 
 //body
 $body-margin: 0 0 9.0rem;
-$body-font-family: 'Roboto Mono', monospace;
+$body-font-family: 'Roboto', sans-serif;
+
+//navigation
+$navbar-border-bottom: #e1e8ed solid 1px;
 
 //card
 $card-margin: 1rem 0;
 $card-margin-bottom: 0.25rem;
+$card-border: #e1e8ed solid 1px;
+
+//form
+$form-border: #e1e8ed solid 1px;
 
 //footer
 $footer-padding: .5rem 1rem;

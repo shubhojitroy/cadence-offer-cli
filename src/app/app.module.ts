@@ -20,7 +20,12 @@ import { FooterComponent } from './childtemplates/footer/footer.component';
 import { ContactComponent } from './dialogs/contact/contact.component';
 import { PrivacypolicyComponent } from './dialogs/privacypolicy/privacypolicy.component';
 
+import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
+
+import { ScheduleComponent } from './tabs/schedule/schedule.component';
+import { DatesComponent } from './tabs/dates/dates.component';
+import { DetailsComponent } from './tabs/details/details.component';
 
 // import { ContactComponent } from './modal/contact/contact.component';
 // import { PrivacypolicyComponent } from './modal/privacypolicy/privacypolicy.component';
@@ -40,13 +45,17 @@ import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    PrivacypolicyComponent
+    PrivacypolicyComponent,
+    ScheduleComponent,
+    DatesComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    TabsModule.forRoot(),
     ModalModule.forRoot(),
   ],
   providers: [BsModalService],

@@ -5,10 +5,18 @@
         <div class="card-header">
           <h5 class="card-title">{{ cardLabel }}</h5>
         </div>
-        <div class="card-body">
+        <div class="card-body">          
           <p class="card-text">
-            We believe that a combination of both Fundamental and Technical analysis, along with a disciplined stock entry/exit strategy, are key to producing above market investment returns over time.
-          </p>
+            Over the coming months, Cadence intends to list a new investment company, Cadence Opportunities Fund (ASX:CDO), that follows Cadence Capital’s proven Fundamental and Technical research process whilst trading more actively within established shorter duration trends.<br><br>
+            <strong>Cadence Capital Limited (ASX:CDM) shareholders will be offered a priority allocation in the Initial Public Offering (IPO)</strong>.<br><br>Investors can register their interest below for the proposed upcoming offer of shares in Cadence Opportunities Fund and receive a video introduction along with updates from our newsletter.<br><br>The prospectus for Cadence Opportunities Fund will be made available when the offer opens. Investors who register will be sent a copy of the prospectus.
+          </p> 
+          <div>
+            <tabset>
+              <tab heading="schedule" id="tab1"><co-schedule></co-schedule></tab>
+              <tab heading="dates"><co-dates></co-dates></tab>
+              <tab heading="details"><co-details></co-details></tab>
+            </tabset>
+          </div>         
           <div class="flex-row">
             <div class="p-2 float-sm-left">
               <button type="button" class="btn btn-primary" [routerLink]="['/']">
