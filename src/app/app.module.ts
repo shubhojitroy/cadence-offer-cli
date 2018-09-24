@@ -21,6 +21,7 @@ import { ContactComponent } from './dialogs/contact/contact.component';
 import { PrivacypolicyComponent } from './dialogs/privacypolicy/privacypolicy.component';
 
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 
 import { ScheduleComponent } from './tabs/schedule/schedule.component';
@@ -58,6 +59,7 @@ import { FaqComponent } from './tabs/faq/faq.component';
     FormsModule,
     ReactiveFormsModule,
     TabsModule.forRoot(),
+    AccordionModule.forRoot(),
     ModalModule.forRoot(),
   ],
   providers: [BsModalService],
