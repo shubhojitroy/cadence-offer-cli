@@ -26,6 +26,7 @@ import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 import { ScheduleComponent } from './tabs/schedule/schedule.component';
 import { DatesComponent } from './tabs/dates/dates.component';
 import { DetailsComponent } from './tabs/details/details.component';
+import { FaqComponent } from './tabs/faq/faq.component';
 
 // import { ContactComponent } from './modal/contact/contact.component';
 // import { PrivacypolicyComponent } from './modal/privacypolicy/privacypolicy.component';
@@ -48,7 +49,8 @@ import { DetailsComponent } from './tabs/details/details.component';
     PrivacypolicyComponent,
     ScheduleComponent,
     DatesComponent,
-    DetailsComponent
+    DetailsComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
